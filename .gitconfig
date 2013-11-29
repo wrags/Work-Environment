@@ -1,0 +1,32 @@
+[user]
+	name = wrags
+	email = henrik.wrangel@gmail.com
+
+[alias]
+	log = log --decorate=full --color
+	s = status
+	l = log --decorate=full --color --graph
+	unstage = rm --cached
+	b = branch
+	co = checkout
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	quotepath = false
+	excludesfile = /Users/henrikwrangel/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true]
+[credential]
+	helper = osxkeychain
+[merge]
+	tool = opendiff
+[push]
+	default = current
